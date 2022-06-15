@@ -13,5 +13,12 @@ if (task.toLowerCase() === "yes") {
   let newItem = {name: newName};
   newItem.price = Number(prompt("Enter a price for the given item:"));
   shoppingList.push(newItem);
+  console.log(shoppingList);
+} else{
+    console.log("Then get the hell out of here, fam, why are you here if you dont want to add a new item, or if you want to make fun of this?")
 }
-console.log(shoppingList);
+let total = 0
+for (let i = 0; i < shoppingList.length; i++ ){
+    total = total + shoppingList[i];
+    console.log(total); 
+}

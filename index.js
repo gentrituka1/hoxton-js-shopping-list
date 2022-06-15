@@ -19,6 +19,6 @@ if (task.toLowerCase() === "yes") {
 }
 let total = 0
 for (let i = 0; i < shoppingList.length; i++ ){
-    total = total + shoppingList[i];
+    total = total + shoppingList[i].price;
     console.log(total); 
 }
